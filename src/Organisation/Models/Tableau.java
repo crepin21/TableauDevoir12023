@@ -1,7 +1,12 @@
 package Organisation.Models;
-import java.util.Random; 
+import java.util.Random;
+
+import javax.management.ConstructorParameters; 
 
 //Declaration de la classe
+/**
+  @param
+ */
 public class Tableau 
 {
     private int[] tableau;
@@ -11,6 +16,10 @@ public class Tableau
         this.tableau = tableau;
     }
 
+    /** @param
+     
+
+    */
     public void initialiserTableau()
     {
         int val = 101;
@@ -22,6 +31,9 @@ public class Tableau
         }
     }
 
+    /**
+     @return String
+     */
     public void affichageTableau()
     {
         System.out.println("***Affichage du tableau***");
@@ -41,7 +53,7 @@ public class Tableau
             if(tableau[i] > maxValeur)
             {
                 maxValeur = tableau[i];
-                indexMax = i;
+                indexMax  = i;
             }
         }
         
