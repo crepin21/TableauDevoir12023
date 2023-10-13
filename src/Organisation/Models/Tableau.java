@@ -1,12 +1,15 @@
 package Organisation.Models;
 import java.util.Random;
-
 import javax.management.ConstructorParameters; 
 
 //Declaration de la classe
 /**
-  @param
- */
+ * @author Crepin21
+ * @version 0.0.1
+ * @param tableau
+ * tableau d'entiers
+  
+*/
 public class Tableau 
 {
     private int[] tableau;
@@ -16,9 +19,12 @@ public class Tableau
         this.tableau = tableau;
     }
 
-    /** @param
-     
-
+    /**
+     * @param val
+     * Nombre permettant de choisir des valeurs entre 1 et 100
+     * @param rand
+     * @return
+     * initialise les valeurs du tableau aleatoirement
     */
     public void initialiserTableau()
     {
@@ -32,7 +38,8 @@ public class Tableau
     }
 
     /**
-     @return String
+     * @return
+     * Affiche l'ensemble du tableau
      */
     public void affichageTableau()
     {
@@ -44,6 +51,14 @@ public class Tableau
         }
     }
 
+    /**
+     * @param maxValeur
+     * Valeur maximale du tableau
+     * @param indexMax
+     * index du plus grand element du tableau
+     * @return
+     * la plus grande valeur du tableau et son index
+     */
     public void trouverPlusGrand()
     {
         int maxValeur = tableau[0];
